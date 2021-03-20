@@ -1,19 +1,14 @@
-﻿// даны 4 числа. определить,существует ли четврехугольник с такими значениями сторон//
-
-#include <stdio.h>
-
+﻿#include <stdio.h>
+#include <math.h>
 int main ()
-{
-    int a[4], i, max=0,sum=0;
-    puts ("введите значения сторон четырехугольника:");
-    scanf ("%i, %i, %i, %i", & a[0], &a[1], &a[2], &a[3]);
-    for (i=0; i<4; i++) 
-    {if (a[i]>max) max=a[i];
-     sum+=a[i];
-     }
-    sum-=max;
-    if (max<sum)
-    puts ("Четырехугольник существует");
-    else puts ("Не существует");
-    return 0;
-}
+
+{float x,z,a,b;
+  printf ("Эта программа вычисляет значение выражения a= 2*x/кв корень из (z*z+9)");
+  puts ("\nВведите х, z:");
+  scanf ("%f %f", &x, &z);
+  b=sqrtf(z*z+9);
+  a=x*2/b;
+  printf("a=%f",a);
+  return 0;
+  
+  }
